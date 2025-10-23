@@ -1,0 +1,42 @@
+# Development files
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.eslintrc.json
+tsconfig.json
+**/*.map
+**/*.ts
+!out/**/*.js
+
+# Dependencies and build artifacts
+node_modules/**
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Test files
+test/**
+tests/**
+**/*.test.*
+
+# Temporary files
+generate-structure.js
+PROJECT_STRUCTURE.md
+icon.svg
+icon-guide.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+*.swp
+*.swo
+*~

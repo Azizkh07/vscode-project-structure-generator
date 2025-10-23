@@ -1,0 +1,142 @@
+{
+  "name": "project-structure-generator-ai",
+  "displayName": "🏗️ Project Structure Generator for AI",
+  "description": "Generate comprehensive project structure files perfect for AI tools, documentation, and code analysis. Export as Markdown, JSON, or text with visual tree representations.",
+  "version": "1.0.0",
+  "publisher": "Azizkh07",
+  "author": {
+    "name": "Mohamed Aziz Khannoussi",
+    "email": "khannoussi.mohamed.aziz@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters",
+    "Visualization"
+  ],
+  "keywords": [
+    "ai",
+    "artificial intelligence",
+    "project structure",
+    "documentation",
+    "code analysis",
+    "tree view",
+    "file tree",
+    "project overview",
+    "codebase analysis",
+    "ai assistant",
+    "chatgpt",
+    "copilot",
+    "claude",
+    "markdown",
+    "export",
+    "visualization"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "projectStructure.generate",
+        "title": "Generate Project Structure for AI",
+        "category": "Project Structure"
+      },
+      {
+        "command": "projectStructure.generateWithContent",
+        "title": "Generate Project Structure with File Contents",
+        "category": "Project Structure"
+      }
+    ],
+    "configuration": {
+      "title": "Project Structure Generator",
+      "properties": {
+        "projectStructure.outputFormat": {
+          "type": "string",
+          "default": "markdown",
+          "enum": [
+            "json",
+            "markdown",
+            "txt"
+          ],
+          "description": "Output format for the generated structure file"
+        },
+        "projectStructure.outputFileName": {
+          "type": "string",
+          "default": "PROJECT_STRUCTURE",
+          "description": "Name of the output file (without extension)"
+        },
+        "projectStructure.includeFileContent": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include file contents in the generated structure"
+        },
+        "projectStructure.maxFileSize": {
+          "type": "number",
+          "default": 100,
+          "description": "Maximum file size in KB to include content (if enabled)"
+        },
+        "projectStructure.excludePatterns": {
+          "type": "array",
+          "default": [
+            "**/node_modules/**",
+            "**/.git/**",
+            "**/dist/**",
+            "**/out/**",
+            "**/.vscode/**",
+            "**/build/**",
+            "**/*.log"
+          ],
+          "description": "Glob patterns for files/folders to exclude"
+        },
+        "projectStructure.includeFileStats": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include file statistics (size, modified date)"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "projectStructure.generate",
+        "key": "ctrl+shift+alt+g",
+        "mac": "cmd+shift+alt+g"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.41.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "glob": "^10.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azizkh07/vscode-project-structure-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Azizkh07/vscode-project-structure-generator/issues"
+  },
+  "homepage": "https://github.com/Azizkh07/vscode-project-structure-generator#readme",
+  "license": "MIT",
+  "qna": "marketplace"
+}
