@@ -2,7 +2,7 @@
   "name": "project-structure-generator-ai",
   "displayName": "🏗️ Project Structure Generator for AI",
   "description": "Generate comprehensive project structure files perfect for AI tools, documentation, and code analysis. Export as Markdown, JSON, or text with visual tree representations.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "Azizkh07",
   "author": {
     "name": "Mohamed Aziz Khannoussi",
