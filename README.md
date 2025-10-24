@@ -1,5 +1,10 @@
 # 🏗️ Project Structure Generator for AI
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/Azizkh07.project-structure-generator-ai)](https://marketplace.visualstudio.com/items?itemName=Azizkh07.project-structure-generator-ai)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Azizkh07.project-structure-generator-ai)](https://marketplace.visualstudio.com/items?itemName=Azizkh07.project-structure-generator-ai)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/Azizkh07.project-structure-generator-ai)](https://marketplace.visualstudio.com/items?itemName=Azizkh07.project-structure-generator-ai)
+[![GitHub](https://img.shields.io/github/stars/Azizkh07/vscode-project-structure-generator?style=social)](https://github.com/Azizkh07/vscode-project-structure-generator)
+
 A powerful VS Code extension that generates comprehensive project structure files, perfect for AI tools, documentation, and code analysis.
 
 ## ✨ Features
