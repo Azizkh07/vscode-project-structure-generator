@@ -40,7 +40,7 @@
   },
   "icon": "icon.png",
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -138,7 +138,7 @@
   "bugs": {
     "url": "https://github.com/Azizkh07/vscode-project-structure-generator/issues"
   },
-  "homepage": "https://github.com/Azizkh07/vscode-project-structure-generator#readme",
+  "homepage": "https://radiant-caramel-061f36.netlify.app",
   "license": "MIT",
   "qna": "marketplace"
 }
