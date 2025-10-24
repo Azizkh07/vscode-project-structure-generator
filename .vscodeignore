@@ -9,8 +9,10 @@ tsconfig.json
 **/*.ts
 !out/**/*.js
 
-# Dependencies and build artifacts
-node_modules/**
+# Dependencies - exclude devDependencies, include production dependencies
+node_modules/**/test/**
+node_modules/**/*.md
+node_modules/**/.bin/**
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
